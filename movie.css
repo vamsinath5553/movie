@@ -1,0 +1,114 @@
+body
+{
+    background-color: rgb(247, 240, 233);
+}
+.search-bar
+{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+.search
+{
+    width: 500px;
+    padding: 18px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(236, 195, 153);
+    border: none;
+    font-size: 20px;
+    color: rgb(151, 155, 158);
+}
+input:focus{
+   outline: none;
+    border: rgb(212, 149, 86);
+}
+.submit
+{
+    width: auto;
+    padding: 18px;
+    border-radius: 0 10px 10px 0;
+    background-color:rgb(212, 162, 112) ;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.intro
+{
+    /* display: flex; */
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.intro h1
+{
+    font-size: 50px;
+    font-weight: 700px;
+}
+.highlight
+{
+    background: linear-gradient(90deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.loader {
+    border-top: 8px solid rgb(150, 208, 247);
+    border-right: 8px solid rgb(124, 245, 76);
+    border-bottom: 8px solid rgb(156, 161, 241);
+    border-left: 8px solid pink;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.movie-container
+{
+    display: flex;
+    width: 700px;
+    margin: 50px auto;
+}
+.content h1
+{
+    color: black;
+}
+.img-container
+{
+    position: relative;
+    margin-left: 10px;
+}
+.tag{
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px;
+    padding: 4px 12px;
+    border-radius: 6px;
+  }
+  .ratings{
+    background-color: #fffffff3;
+    top: 0;
+    left: 0;
+    color: black;
+  }
+  .genre{
+    background-color: #FFC837;
+    bottom: 0;
+    left: 0;
+    color: black;
+  }
+  .error-container
+  {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 200px;
+    font-size: 30px;
+  }
+  .d-none{
+    display: none;
+  }

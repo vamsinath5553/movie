@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+
+    <section>
+        <div class="search-bar">
+            <input class="search" id="movieName" type="search" placeholder="search movie details.....">
+            <button class="submit" onclick="fetchMoviedetails()">search movie</button>
+        </div>
+    </section>
+     <section>
+        <div class="intro" id="intro">
+            <h1 class="highlight">Details of a Movie</h1>
+            <h3>Search for the movie name and get complete details including direacters, actors, IMDB ratings, Votes, Earnings and more interesting facts.</h3>
+        </div>
+    </section>  
+    <div id="loader"></div>
+    <section>
+        <div class="movie-container" id="movieContainer">
+            <div class="content">
+                <h1 id="title"></h1>
+                <p id="desc"></p>
+                <p> <span class="highlight">Actors:</span> <span id="actor"></span></p>
+                <p><span class="highlight">Awards:</span> <span id="awards"></span></p>
+                <p><span class="highlight">BoxOffice:</span> <span id="collection"></span></p>
+                <p><span class="highlight">Director</span> <span id="director"></span></p>
+                <p><span class="highlight">Writer:</span> <span id="writers"></span></p>
+                <p><span class="highlight">Year:</span> <span id="year"></span></p>
+            </div>
+            <div class="img-container">
+                <img id="img" src="" height="400px" alt="">
+                <p class="ratings tag">IMDB: <span id="ratings"></span></p>
+                <p class="genre tag" id="genre">Action, Adventure, Drama</p>
+            </div>
+        </div>
+        <div class="error-container" id="errorContainer">
+            <img src="no-data.png" height="200">
+
+            <h1 class="highlight">Movie Not Found!</h1>
+          
+        </div>
+    </section>
+   <script src="movie.js"></script>
+</body>
+</html>
